@@ -1,14 +1,8 @@
-> ## 🛠 Status: In Development
-> This starter app is currently in development.
+# Ejemplo de Redux y LitElement
 
-## Open Web Components Barebone App
+Es un ejemplo, lo más sencillo posible, para ver cómo funciona Redux en el marco del desarrollo de apps con Web Components y LitElement.
 
-[![Built with open-wc recommendations](https://img.shields.io/badge/built%20with-open--wc-blue.svg)](https://github.com/open-wc) 
+Este ejemplo se imparte como una introducción a Redux, en el [curso de LitElement](https://escuela.it/cursos/curso-web-components-litelement) como clase extra.
 
-## Quickstart
+En realidad este tema formará parte de un estudio más profundo en el curso de [PWA con LitElement](https://escuela.it/cursos/curso-aplicaciones-progresivas-web-components-litelement), donde veremos muchos más detalles sobre cómo configurar cosas como request asíncronos y lazy load de reducers y action creators.
 
-To get started:
-
-```sh
-yarn start
-```
