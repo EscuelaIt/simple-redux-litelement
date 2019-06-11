@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="Description" content="Put your description here.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    body {
+      margin: 20px;
+      background-color: #ededed;
+    }
+  </style>
+  <title>redux-litelement-app</title>
+</head>
+<body>
+  <redux-litelement-app></redux-litelement-app>
+
+  <script>
+  // Solucionar problema "Process is not defined"
+  // https://github.com/reduxjs/redux/issues/2907
+  window.process = {
+    env: {
+      NODE_ENV: 'production'
+    }
+  };
+  </script>
+  <script type="module" src="./src/redux-litelement-app.js"></script>
+</body>
+
+</html>
