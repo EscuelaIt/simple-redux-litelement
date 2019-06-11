@@ -1,8 +1,6 @@
-<!doctype html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="Description" content="Put your description here.">
 
   <style>
@@ -25,7 +23,7 @@
     }
   </style>
   <title>redux-litelement-app</title>
-</head>
+<link rel="preload" as="script" crossorigin="anonymous" href="./redux-litelement-app.js"></head>
 <body>
   <h1>Ejemplo sencillo de Redux en LitElement</h1>
   <p>Este ejemplo se imparte como una introducción a Redux, en el <a href="https://escuela.it/cursos/curso-web-components-litelement">curso de LitElement</a> como clase extra.</p>
@@ -41,7 +39,16 @@
     }
   };
   </script>
-  <script type="module" src="./src/redux-litelement-app.js"></script>
-</body>
+  
 
-</html>
+
+
+<script type="module">window.importModule=src=>import(src);</script><script type="module">
+      (async () => {
+        const p = [];
+        if (!('attachShadow' in Element.prototype) || !('getRootNode' in Element.prototype)) {p.push('./polyfills/webcomponent-polyfills.js');}
+        if (!window.importModule) {p.push('./polyfills/dynamic-import-polyfill.js');}
+        if (p.length > 0) {await Promise.all(p.map(p => new Promise((rs, rj) => {const s = document.createElement('script');s.src = p;s.onerror = () => rj(`Failed to load ${s.s}`);s.onload = () => rs();document.head.appendChild(s);})));}
+        importModule('./redux-litelement-app.js');
+      })();
+    </script><script src="./polyfills/babel-polyfills.js" nomodule=""></script><script src="./polyfills/webcomponent-polyfills.js" nomodule=""></script><script src="./polyfills/system-loader.js" nomodule=""></script><script nomodule="">System.import('./legacy/redux-litelement-app.js');</script></body></html>
